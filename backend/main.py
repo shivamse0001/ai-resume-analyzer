@@ -16,8 +16,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "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")
-
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 @app.get("/")
 def home():
     return {"message": "Resume Analyzer API is running!"}
