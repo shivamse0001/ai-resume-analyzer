@@ -24,7 +24,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8001/analyze",
+        "https://ai-resume-analyzer-w2nm.onrender.com/analyze",
         formData
       );
       setResult(response.data.result);
